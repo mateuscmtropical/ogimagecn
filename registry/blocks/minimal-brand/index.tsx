@@ -31,7 +31,7 @@ export const MinimalBrand = ({ brand, tagline, logo }: MinimalBrandProps) => (
           : { color: "#fafafa", fontSize: "44px", fontWeight: 600 }
       }
     >
-      {brand.charAt(0).toUpperCase()}
+      {([...brand][0] ?? "").toUpperCase()}
     </BrandMark>
 
     <div
